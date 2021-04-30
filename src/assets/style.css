@@ -1,6 +1,5 @@
 .navbar-linear {
   /* background-color: linear-gradient(to bottom, rgba(167, 167, 167, 0.13), rgba(0, 0, 0, 0.486)); */
-  position: fixed;
   width: 100%;
   z-index: 4;
   margin-top: 0 !important;

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <nav-bar> </nav-bar>
     <transition name="fade" mode="out-in">
       <router-view> </router-view>
     </transition>
@@ -9,9 +8,12 @@
 
 <script>
 import navBar from "@/components/Home/navBar.vue";
+import Home from "@/views/Home";
+
 export default {
   components: {
     navBar,
+    Home,
   },
 };
 </script>
