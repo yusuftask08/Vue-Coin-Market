@@ -9,12 +9,6 @@
         href="/"
         style="margin-right: 20px; margin-left: 50px"
       >
-        <!-- <img
-          src="https://fontmeme.com/permalink/210430/fa46226807959f8c430111d46f2f464f.png"
-          alt="netflix-font"
-          border="0"
-          style="width: 150px"
-        /> -->
         <img
           src="https://fontmeme.com/permalink/210430/e2a4bcf352254f362ae0da7347cd4283.png"
           alt="netflix-font"
@@ -49,14 +43,13 @@
           </li>
         </ul>
         <form class="d-flex">
-          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Cüzdan</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Favorilerim</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Emirler </a>
-            </li>
-          </ul> -->
+          </ul>
           <button class="btn btn-outline-success" type="submit">
             Giriş Yap
           </button>
