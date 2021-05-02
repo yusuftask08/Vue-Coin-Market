@@ -4,13 +4,16 @@
     <ads />
     <div class="container-card">
       <div class="card-list">
-        <div class="card ms-5" v-for="item in getpData" :key="item.id">
+        <div class="card ms-5" v-for="item in getpCurData" :key="item.id">
           <div class="card-header">
             <div class="card-img">
               <img :src="item.logo_url" />
             </div>
             <div class="card-header-title">
               <h3>{{ item.name }}</h3>
+            </div>
+            <div class="card-header-price">
+              <span>+</span>{{ parseFloat(item.price) }}$
             </div>
           </div>
           <div class="card-body">
@@ -27,18 +30,20 @@
 import ads from "@/components/Home/ads.vue";
 import navBar from "@/components/Home/navBar.vue";
 import { mapGetters } from "vuex";
-
 export default {
   components: {
     navBar,
     ads,
   },
 
-  created() {
+  mounted() {
     this.$store.dispatch("getData");
+    this.$store.dispatch("getCurrenciesData");
+    this.$store.dispatch("getSparkData");
+    this.$store.dispatch("getCurSetInt");
   },
   computed: {
-    ...mapGetters(["getpData"]),
+    ...mapGetters(["getpData", "getpSparkData", "getpCurData"]),
   },
 };
 </script>
